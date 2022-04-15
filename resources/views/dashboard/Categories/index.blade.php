@@ -1,7 +1,7 @@
 @extends('dashboard.skeleton')
 @section('content')
 
-	<div class="ml-20 py-4 flex-grow border-2 border-gray-300 flex flex-col">
+	<div class="ml-20 py-4 flex-grow flex flex-col">
 
 		<a type="button" href="/categories/create"
 		   class="mx-20 mb-10 text-white bg-purple-500 hover:bg-purple-400 focus:ring-4 focus:outline-none focus:ring-purple-600 font-medium rounded-lg text-base px-6 py-4 text-center ">

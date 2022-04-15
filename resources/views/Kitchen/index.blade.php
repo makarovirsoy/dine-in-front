@@ -1,6 +1,5 @@
 @extends('Kitchen.skeleton')
 @section('content')
-
 	<div class="mx-40 flex flex-col w-full">
 		@for ($i = 0; $i < 5; $i++)
 			<div class="p-6 bg-white rounded-lg border border-gray-200 shadow-md my-4 flex flex-row justify-between">

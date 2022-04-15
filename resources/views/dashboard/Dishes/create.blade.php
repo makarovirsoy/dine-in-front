@@ -1,7 +1,7 @@
 @extends('dashboard.skeleton')
 @section('content')
 
-	<div class="ml-20 py-4 flex-grow border-2 border-gray-300 flex flex-col">
+	<div class="ml-20 py-4 flex-grow flex flex-col">
 		<h1 for="base-input" class="block mb-4 mx-auto  text-xl font-medium text-orange-600">Speise Erstellen</h1>
 		<form method="POST" action="/dishes" class=" mx-20 ">
 			@csrf

@@ -1,7 +1,7 @@
 @extends('dashboard.skeleton')
 @section('content')
 
-	<div class="ml-20 py-4 flex-grow border-2 border-gray-300">
+	<div class="ml-20 py-4 flex-grow ">
 
 		<div class="flex justify-around mb-20">
 

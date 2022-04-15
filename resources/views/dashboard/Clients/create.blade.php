@@ -1,8 +1,8 @@
 @extends('dashboard.skeleton')
 @section('content')
 
-	<div class="ml-20 py-4 flex-grow border-2 border-gray-300 flex flex-col">
-		<h1 for="base-input" class="block mb-4 mx-auto  text-xl font-medium text-purple-900">Kategorie Erstellen</h1>
+	<div class="ml-20 py-4 flex-grow flex flex-col">
+		<h1 for="base-input" class="block mb-4 mx-auto text-xl font-medium text-purple-900">Kategorie Erstellen</h1>
 		<form method="POST" action="/categories" class=" mx-20 ">
 			@csrf
 		<div class="mb-6">
