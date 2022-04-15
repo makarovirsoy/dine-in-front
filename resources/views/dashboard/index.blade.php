@@ -25,7 +25,7 @@
 				<p class="mb-3 font-normal text-gray-700">offene Rechungen</p>
 			</div>
 		</div>
-		<div class="m-20">
+		<div class="my-20 mx-8">
 			@include('dashboard.new-orders-table')
 		</div>
 	</div>

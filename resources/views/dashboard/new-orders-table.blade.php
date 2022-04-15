@@ -1,5 +1,5 @@
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-	<table class="w-full text-sm text-left text-indigo-300">
+	<table class="w-full text-sm text-left text-indigo-300" aria-describedby="orders">
 		<thead class="text-xs text-indigo-500 uppercase bg-indigo-100 ">
 		<tr>
 			<th scope="col" class="px-6 py-3">
@@ -21,7 +21,7 @@
 		</thead>
 
 		<tbody>
-		<tr class="bg-white border-b ">
+		<tr class="bg-white ">
 			<th scope="row" class="px-6 py-4 font-medium text-indigo-900 dark:text-white whitespace-nowrap">
 				002
 			</th>
