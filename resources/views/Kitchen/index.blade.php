@@ -10,13 +10,8 @@
 					<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Menge: <span class="inline-flex justify-center items-center p-3 ml-3 w-3 h-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200">3</span></p>
 					<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Zahlung :  <span class="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">paypal</span></p>
 				</div>
-				<div
-				   class=" w-1/4 inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
-					Bestellung Fertig
-					<svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
-						 xmlns="http://www.w3.org/2000/svg">
-					</svg>
-				</div>
+				<button class=" w-1/4 inline-flex items-center py-2 px-3 text-lg font-medium text-center text-white bg-green-500 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300"> Bestellung Fertig</button>
+
 			</div>
 		@endfor
 	</div>

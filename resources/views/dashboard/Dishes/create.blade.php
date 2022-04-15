@@ -20,7 +20,7 @@
 
 			<div class="mb-6">
 				<label for="base-input" class="block mb-2 text-lg font-medium text-orange-500">Bild Hochladen</label>
-				<input class="w-1/2 text-sm text-orange-800  rounded-lg border border-orange-300 cursor-pointer dark:text-gray-400 focus:outline-none focus:border-transparent"
+				<input class="w-1/2 text-sm text-orange-800 bg-orange-50 rounded-lg border border-orange-300 cursor-pointer dark:text-gray-400 focus:outline-none focus:border-transparent"
 					   aria-describedby="cover" id="cover" type="file">
 			</div>
 
@@ -28,7 +28,7 @@
 				<label for="base-input" class="block mb-2 text-lg font-medium text-orange-500">verfügbarkeit</label>
 				<div class="flex items-center">
 					<input id="checkbox-1" aria-describedby="checkbox-1" type="checkbox"
-						   class="w-4 h-4 text-orange-600 bg-orange-100 rounded border-orange-300 focus:ring-orange-500 focus:ring-2"
+						   class="w-4 h-4 text-orange-600 bg-orange-50  rounded border-orange-300 focus:ring-orange-500 focus:ring-2"
 						   checked>
 					<label for="checkbox-1" class="ml-3 text-sm font-medium text-orange-900">Speise wird auf dem Menu
 						angezeigt</label>
@@ -38,7 +38,7 @@
 			<div class="mb-6">
 				<label for="countries" class="block mb-2 text-lg font-medium text-orange-500">Kategorie</label>
 				<select id="countries"
-						class="border border-orange-300 text-orange-600 text-lg rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-1/2 p-2">
+						class="border border-orange-300 bg-orange-50 text-orange-600 text-lg rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-1/2 p-2">
 					<option>Vorspeise</option>
 					<option>getränke</option>
 					<option>Nachtisch</option>
