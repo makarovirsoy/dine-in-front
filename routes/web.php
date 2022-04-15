@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\DishController;
+use App\Http\Controllers\KitchenController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +19,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('Client.welcome');
+});
+
+Route::get('/dashboard', function () {
+	return view('dashboard.index');
+});
+
+Route::resource('categories', CategoryController::class);
+Route::resource('dishes', DishController::class);
+Route::resource('clients', ClientController::class);
+Route::resource('orders', OrderController::class);
+Route::resource('kitchen', KitchenController::class);
+
+Route::get('/logout', function () {
+	return 'logged out';
 });
