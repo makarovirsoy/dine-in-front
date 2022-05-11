@@ -23,6 +23,7 @@
         "@inertiajs/inertia-vue3": "^0.6.0",
         "@inertiajs/progress": "^0.2.7",
         "vform": "^2.1.2",
-        "vue": "^3.2.33"
+        "vue": "^3.2.33",
+        "vuex": "^4.0.2"
     }
 }

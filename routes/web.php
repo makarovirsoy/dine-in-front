@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Middleware\LoggedInMiddleware;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +17,9 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-	return Inertia::render('login',);
-});
+Route::get('/dashboard', [AuthController::class, 'loginPage']);
+Route::get('/logout', [AuthController::class, 'logout']);
+
+Route::post('/dashboard', [AuthController::class, 'loginApi']);
+Route::post('/logout', [AuthController::class, 'logout']);
 
