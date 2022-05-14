@@ -1,5 +1,5 @@
 <template>
-  <h1>Inertiajs is {{ test }}</h1>
+  <h1>Inertiajs is </h1>
 </template>
 
 <script>
