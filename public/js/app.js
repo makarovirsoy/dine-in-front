@@ -19434,7 +19434,13 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {},
   methods: {},
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    localStorage.setItem('api_backend_token', this.$props.api_backend_token);
+
+    if (localStorage.getItem('api_backend_token') === 'undefined') {
+      window.location.href = '/login';
+    }
+  }
 });
 
 /***/ }),
@@ -19463,7 +19469,13 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {},
   methods: {},
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    localStorage.setItem('api_backend_token', this.$props.api_backend_token);
+
+    if (localStorage.getItem('api_backend_token') === 'undefined') {
+      window.location.href = '/login';
+    }
+  }
 });
 
 /***/ }),
@@ -19492,7 +19504,13 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {},
   methods: {},
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    localStorage.setItem('api_backend_token', this.$props.api_backend_token);
+
+    if (localStorage.getItem('api_backend_token') === 'undefined') {
+      window.location.href = '/login';
+    }
+  }
 });
 
 /***/ }),
@@ -19521,7 +19539,13 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {},
   methods: {},
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    localStorage.setItem('api_backend_token', this.$props.api_backend_token);
+
+    if (localStorage.getItem('api_backend_token') === 'undefined') {
+      window.location.href = '/login';
+    }
+  }
 });
 
 /***/ }),
