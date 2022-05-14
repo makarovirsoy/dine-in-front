@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\User;
+use App\Services\LoginToken;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -24,8 +25,8 @@ class AppServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		app()->singleton('user', function ($user) {
-			return $user;
+		app()->singleton('Logintoken', function () {
+			return new LoginToken();
 		});
 	}
 }

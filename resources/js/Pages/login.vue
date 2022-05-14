@@ -35,9 +35,6 @@
 </template>
 
 <script>
-import {reactive} from 'vue'
-import {Inertia} from '@inertiajs/inertia'
-
 export default {
 
   name: 'login',
@@ -62,7 +59,6 @@ export default {
   },
 
   mounted() {
-
   },
 };
 </script>

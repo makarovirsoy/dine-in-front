@@ -9,7 +9,6 @@ use \Exception;
 
 class AuthController extends Controller
 {
-
 	public function loginPage()
 	{
 		return Inertia::render('login');
@@ -30,6 +29,7 @@ class AuthController extends Controller
 
 	public function logout()
 	{
-		return Inertia::render('login');
+		return '';
 	}
+
 }
