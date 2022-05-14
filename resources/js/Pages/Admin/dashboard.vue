@@ -1,15 +1,15 @@
 <template>
-  <h1>dashboard {{ api_backend_token }}</h1>
-  <a href="/categories"> categories</a>
-
+  <Layout>
+    <slot>dashboard {{ api_backend_token }}</slot>
+    </Layout>
 </template>
 
 <script>
+import Layout from "./layout";
 
 export default {
   name: 'dashboard',
-
-
+  components: {Layout},
   props: {
     api_backend_token: String,
   },

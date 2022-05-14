@@ -1,5 +1,8 @@
 <template>
-  <button @click="logout()">Logout</button>
+    <div @click="logout()"
+        class="p-6 bg-red-300 border-2 border-red-500 rounded-full text-center text-lg hover:bg-red-200  hover:cursor-pointer row-end-1">
+      logout
+    </div>
 </template>
 
 <script>

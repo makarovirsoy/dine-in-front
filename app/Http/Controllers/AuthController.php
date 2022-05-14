@@ -11,7 +11,7 @@ class AuthController extends Controller
 {
 	public function loginPage()
 	{
-		return Inertia::render('login');
+		return Inertia::render('Admin/login');
 	}
 
 	public function loginApi(Request $request)
@@ -24,12 +24,6 @@ class AuthController extends Controller
 		}
 		$token = $response->json('token');
 
-		return Inertia::render('dashboard', ['api_backend_token' => $token]);
+		return Inertia::render('Admin/dashboard', ['api_backend_token' => $token]);
 	}
-
-	public function logout()
-	{
-		return '';
-	}
-
 }
