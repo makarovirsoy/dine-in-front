@@ -1,6 +1,7 @@
 <template>
   <Layout>
-    <slot>dashboard {{ api_backend_token }}</slot>
+    <slot>dashboard
+    </slot>
     </Layout>
 </template>
 
@@ -11,7 +12,6 @@ export default {
   name: 'dashboard',
   components: {Layout},
   props: {
-    api_backend_token: String,
   },
 
   data() {
@@ -21,8 +21,8 @@ export default {
   methods: {},
 
   mounted() {
-    localStorage.setItem('api_backend_token', this.$props.api_backend_token);
-    if (localStorage.getItem('api_backend_token') === 'undefined') {
+    console.log(localStorage.getItem('api_backend_token'));
+    if (localStorage.getItem('api_backend_token') === null) {
       window.location.href = '/login';
     }
   }
