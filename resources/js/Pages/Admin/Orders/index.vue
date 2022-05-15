@@ -27,7 +27,7 @@
 
             <tbody>
             <tr class="bg-white border-b text-purple-400">
-              <th scope="row" class="px-6 py-4 font-medium text-purple-900 dark:text-white whitespace-nowrap">
+              <th scope="row" class="px-6 py-4 font-medium text-purple-900 whitespace-nowrap">
                 002
               </th>
               <td class="px-6 py-4">

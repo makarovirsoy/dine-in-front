@@ -19652,7 +19652,12 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Layout: _layout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  props: {},
+  props: {
+    sales: Number,
+    openOrders: Number,
+    ordersToday: Number,
+    operBills: Number
+  },
   data: function data() {
     return {};
   },
@@ -20325,7 +20330,7 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "bg-white border-b text-purple-400"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
   scope: "row",
-  "class": "px-6 py-4 font-medium text-purple-900 dark:text-white whitespace-nowrap"
+  "class": "px-6 py-4 font-medium text-purple-900 whitespace-nowrap"
 }, " 002 "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
   "class": "px-6 py-4"
 }, " lifetung "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
@@ -20368,16 +20373,81 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+var _hoisted_1 = {
+  "class": "ml-20 py-4 flex-grow"
+};
+var _hoisted_2 = {
+  "class": "grid grid-cols-2 justify-around"
+};
+var _hoisted_3 = {
+  "class": "p-6 rounded-lg border-l-8 border-green-300 border border-green-400 shadow-xl bg-green-300 text-gray-900 m-auto my-10 w-1/2"
+};
+var _hoisted_4 = {
+  "class": "mb-2 text-2xl font-bold tracking-tight text-gray-800"
+};
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("dashboard ");
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mb-3 font-normal text-gray-700"
+}, "Umsatz", -1
+/* HOISTED */
+);
+
+var _hoisted_6 = {
+  "class": "p-6 rounded-lg border-l-8 border-blue-300 border border-blue-400 shadow-xl bg-blue-300 text-gray-900 m-auto my-10 w-1/2"
+};
+var _hoisted_7 = {
+  "class": "mb-2 text-2xl font-bold tracking-tight text-gray-800"
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mb-3 font-normal text-gray-700"
+}, "bestellungen heute", -1
+/* HOISTED */
+);
+
+var _hoisted_9 = {
+  "class": "p-6 rounded-lg border-l-8 border-orange-300 border border-orange-400 shadow-xl bg-orange-300 text-gray-900 m-auto my-10 w-1/2"
+};
+var _hoisted_10 = {
+  "class": "mb-2 text-2xl font-bold tracking-tight text-gray-800"
+};
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mb-3 font-normal text-gray-700"
+}, "Neue Bestellungen", -1
+/* HOISTED */
+);
+
+var _hoisted_12 = {
+  "class": "p-6 rounded-lg border-l-8 border-red-300 border border-red-400 shadow-xl bg-red-300 text-gray-900 m-auto my-10 w-1/2"
+};
+var _hoisted_13 = {
+  "class": "mb-2 text-2xl font-bold tracking-tight text-gray-800"
+};
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mb-3 font-normal text-gray-700"
+}, "Offene Rechungen", -1
+/* HOISTED */
+);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _this = this;
+
   var _component_Layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Layout");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_Layout, null, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default", {}, function () {
-        return [_hoisted_1];
+        return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_this.$props.sales) + " €", 1
+        /* TEXT */
+        ), _hoisted_5]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_this.$props.ordersToday), 1
+        /* TEXT */
+        ), _hoisted_8]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_this.$props.openOrders), 1
+        /* TEXT */
+        ), _hoisted_11]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_this.$props.operBills), 1
+        /* TEXT */
+        ), _hoisted_14])])])];
       })];
     }),
     _: 3

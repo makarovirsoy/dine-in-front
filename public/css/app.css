@@ -519,6 +519,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .m-auto {
   margin: auto;
 }
+.m-4 {
+  margin: 1rem;
+}
+.m-10 {
+  margin: 2.5rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -542,6 +548,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-20 {
   margin-left: 5rem;
   margin-right: 5rem;
+}
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .ml-1 {
   margin-left: 0.25rem;
@@ -753,6 +763,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid-cols-10 {
   grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-rows-none {
   grid-template-rows: none;
