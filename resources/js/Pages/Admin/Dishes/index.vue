@@ -1,12 +1,12 @@
 <template>
   <Layout>
     <slot>
-      <div class="ml-20 py-4 flex-grow flex flex-col">
+      <div class="ml-20 py-4 flex-grow flex flex-col" v-bind:class="(createModalShowing)?'blur-sm':''">
 
-        <a type="button" href="/dishes/create"
-           class="mx-20 mb-10 text-white bg-emerald-500 hover:bg-emerald-400 focus:ring-4 focus:outline-none focus:ring-emerald-600 font-medium rounded-full text-base px-6 py-4 text-center ">
+        <div @click="createModalShowing = true"
+           class="mx-20 mb-10 text-white bg-emerald-500 hover:bg-emerald-400 focus:ring-4 focus:outline-none focus:ring-emerald-600 font-medium rounded-full text-base px-6 py-4 text-center hover:cursor-pointer">
           Speise Hinzufügen
-        </a>
+        </div>
 
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-20">
           <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -73,22 +73,26 @@
           </table>
         </div>
       </div>
+      <Create :showing="createModalShowing" @close="createModalShowing = false"></Create>
     </slot>
   </Layout>
 </template>
 
 <script>
 import Layout from "../layout";
+import Create from "./create";
 
 export default {
   name: 'index',
 
-  components: {Layout},
+  components: {Layout, Create},
 
   props: {},
 
   data() {
-    return {};
+    return {
+      createModalShowing: false,
+    };
   },
 
   computed: {},

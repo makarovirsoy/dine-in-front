@@ -1,13 +1,12 @@
 <template>
   <Layout>
-    <slots>
+    <slot>
+      <div class="ml-20 py-4 flex-grow flex flex-col " v-bind:class="(createModalShowing)?'blur-sm':''">
 
-      <div class="ml-20 py-4 flex-grow flex flex-col">
-
-        <a type="button" href="/categories/create"
-           class="mx-20 mb-10 text-white bg-fuchsia-500 hover:bg-fuchsia-400 focus:ring-4 focus:outline-none focus:ring-fuchsia-600 font-medium rounded-full text-base px-6 py-4 text-center ">
+        <div @click="createModalShowing = true"
+             class="mx-20 mb-10 text-white bg-fuchsia-500 hover:bg-fuchsia-400 focus:ring-4 focus:outline-none focus:ring-fuchsia-600 font-medium rounded-full text-base px-6 py-4 text-center hover:cursor-pointer">
           Karegorie Hinzufügen
-        </a>
+        </div>
 
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-20">
           <table class="w-full text-sm text-left text-gray-500 ">
@@ -48,7 +47,7 @@
               </td>
               <td class="px-6 py-4 text-left">
                 <form method="POST" action="/categories/6">
-                  <input type="hidden" name="_method" value="delete" />
+                  <input type="hidden" name="_method" value="delete"/>
                   <button type="submit" class="font-medium text-red-600  hover:underline">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                          viewBox="0 0 24 24"
@@ -65,22 +64,27 @@
           </table>
         </div>
       </div>
-    </slots>
+      <Create :showing="createModalShowing" @close="createModalShowing = false"></Create>
+
+    </slot>
   </Layout>
 </template>
 
 <script>
 import Layout from "../layout";
+import Create from "./create";
 
 export default {
   name: 'index',
 
-  components: {Layout},
+  components: {Create, Layout},
 
   props: {},
 
   data() {
-    return {};
+    return {
+      createModalShowing: false,
+    };
   },
 
   computed: {},

@@ -41,7 +41,7 @@ Route::get('kitchen1', function () {
 });
 
 Route::get('test', function () {
-	return Inertia::render('Admin/layout');
+	return Inertia::render('Admin/Categories/create');
 });
 
 Route::get('/', function () {
