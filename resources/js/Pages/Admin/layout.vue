@@ -1,7 +1,11 @@
 <template>
-  <nav class="bg-cyan-400 p-4 flex flex-row justify-around">
-    <a href="/dashboard"><div>Dashboard </div></a>
-    <a href="/"><div>Home</div></a>
+  <nav class="bg-gray-700 p-4 flex flex-row justify-around">
+    <a href="/dashboard">
+      <div class="text-gray-50">Dashboard</div>
+    </a>
+    <a href="/">
+      <div class="text-gray-50">Home</div>
+    </a>
   </nav>
   <div class="grid grid-cols-10 grid-rows-none h-screen">
     <div class="w-64 col-span-2 mt-12 mx-auto ">
@@ -41,7 +45,7 @@
 
     <div class=" m-12 col-span-8 ">
       <div class="p-4">
-        <slot />
+        <slot/>
       </div>
     </div>
   </div>
