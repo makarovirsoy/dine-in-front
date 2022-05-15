@@ -16,14 +16,19 @@ class AuthController extends Controller
 
 	public function loginApi(Request $request)
 	{
+		$token = $this->getToken($request);
+
+		return Inertia::render('Admin/loginsuccess', ['api_backend_token' => $token]);
+	}
+
+	public function getToken($request)
+	{
 		$url = config('dineInApi.ApiUrl') . '/authenticate';
 		try {
 			$response = Http::post($url, $request->all());
 		} catch (Exception $e) {
 			throw new \Error();
 		}
-		$token = $response->json('token');
-
-		return Inertia::render('Admin/dashboard', ['api_backend_token' => $token]);
+		return $response->json('token');
 	}
 }

@@ -1,14 +1,12 @@
 <template>
-  <h1>Inertiajs is </h1>
+<div>kundenbereich</div>
 </template>
 
 <script>
 export default {
   name: 'home',
 
-  props: {
-    test: String,
-  },
+  props: {},
 
   data() {
     return {};
