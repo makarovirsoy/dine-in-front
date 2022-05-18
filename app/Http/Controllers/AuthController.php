@@ -17,8 +17,10 @@ class AuthController extends Controller
 	public function loginApi(Request $request)
 	{
 		$token = $this->getToken($request);
-
-		return Inertia::render('Admin/loginsuccess', ['api_backend_token' => $token]);
+		if ($token) {
+			return Inertia::render('Admin/loginsuccess', ['api_backend_token' => $token]);
+		}
+		$this->loginPage();
 	}
 
 	public function getToken($request)
